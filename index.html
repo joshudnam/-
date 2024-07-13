@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png"> 
+    <title>야정남(야구기록 정리하는 남자)</title>
+    <style>
+    *{padding:0;margin:0;}
+      li{list-style:none}
+      a{text-decoration:none;font-size:14px}
+      .menu {
+  width: 1000px;
+  overflow: hidden;
+  margin: 150px auto;
+}
+.parent {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  border: 1px solid black;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  background-color: #5778ff;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
+      </style>
+</head>
+<body>
+  <div class='parent'>
+    <div><a href="index.html" style="color: black; font-size: 50px;"><center><h1>야정남</h1></center></a></div>
+    <div>  <ul class="menu">
+      <li>
+        <a href="rule.html">야구규칙</a>
+      </li>
+      <li>
+        <a href="record.html">역대기록</a>
+        <ul class="submenu">
+          <li><a href="https://namu.wiki/w/KBO%20%EB%A6%AC%EA%B7%B8/%EC%97%AD%EB%8C%80%20%EA%B0%9C%EC%9D%B8%20%EA%B8%B0%EB%A1%9D">개인기록</a></li>
+          <li><a href="https://namu.wiki/w/KBO%20%EB%A6%AC%EA%B7%B8/%EC%97%AD%EB%8C%80%20%EA%B8%B0%EB%A1%9D#s-1.3.1">팀기록</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <a href="http://www.welcometopranking.com/">탑랭킹</a>
+        <ul class="submenu">
+          <li><a href="http://www.welcometopranking.com/baseball/?p=chart&searchType=YEARLY&searchDate=2024&position=1&team=&page=1&orderBy=&orderSort=">투수</a></li>
+          <li><a href="http://www.welcometopranking.com/baseball/?p=chart&searchType=YEARLY&searchDate=2024&position=T&team=&page=1&orderBy=wpa_point&orderSort=DESC">내야수</a></li>
+          <li><a href="http://www.welcometopranking.com/baseball/?p=chart&searchType=YEARLY&searchDate=2024&position=T&team=&page=1&orderBy=wpa_point&orderSort=DESC">외야수</a></li>
+          <li><a href="https://ko.wikipedia.org/wiki/%ED%8B%80:%ED%8C%80%EB%B3%84_%ED%95%9C%EA%B5%AD_%ED%94%84%EB%A1%9C_%EC%95%BC%EA%B5%AC_%EC%97%AD%EB%8C%80_%EA%B0%90%EB%8F%85">감독</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://namu.wiki/w/%EC%95%BC%EA%B5%AC%20%EC%9A%A9%EC%96%B4">야구용어</a>
+
+
+      </li>
+      <li>
+        <a href="https://www.koreabaseball.com/Schedule/Schedule.aspx">경기일정 </a>
+
+      </li>
+    </ul>
+  </div>
+  </div>
+  열심히 정리했는 뎅 광고 한번 보는 건 어떤......
+  
+</body>
+</html>
